@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1240px){
+
+.pourquoiAP{
+margin-top:600px;
+}
+
+#titreEquipe{
+margin-top:200px;
+background-color:green;
+}
+
+
+ #myCarousel{
+margin-top:10px;
+background-color:none;
+}
+
+#menu-demo2{
+}
+
+#boutonCarousel{
+margin-top:1px;
+background-color:none;
+
+}
+
+.jour{
+}
+
+.heure{
+margin-top:40px;
+
+}
+
+#rentabilite{width:130px;height: 80px;}
+#performance{width:130px;height: 80px;}
+#surmesure{width:130px;height: 80px;}
+
+
+
+
+
+
+}
+
+

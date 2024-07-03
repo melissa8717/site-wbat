@@ -1,0 +1,121 @@
+.wrapper{
+margin-left : 600px;margin-top:-150px;
+}  
+
+
+
+.cell {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#holder {
+  width: 603px;
+  height: 383px;
+  margin: auto;
+}
+
+.cntSeparator { display: none; }
+
+.cntDigit {
+  margin-top: 148px !important;
+}
+
+  .cntDigit#cnt_0 { margin-left: 52px; }
+  .cntDigit#cnt_2 { margin-left: 7px; }-
+
+
+
+.heure{
+margin-top: -24px; 
+margin-left: 820px;
+}
+
+.min{
+margin-top: -43px;
+ margin-left: 950px;
+}
+
+.sec{
+margin-top: -43px; 
+margin-left: 1080px;
+}
+
+#textDecompte{
+width: 100%;
+height: 400%;
+margin-left: 60px;
+margin-top: -100px;
+
+}
+
+
+
+@media screen and (max-width: 1240px)
+{
+
+.wrapper{
+margin-left:0px;
+ }
+
+#holder{
+margin-left:0px;
+
+}
+
+
+.jour{
+margin-left: 60px;
+}
+
+.heure{
+margin-top: -43px; 
+margin-left: 200px;
+
+}
+
+.min{
+margin-top: -43px;
+ margin-left: 340px;
+}
+
+.sec{
+margin-top: -43px;
+
+margin-left: 470px;
+}
+
+
+}
+
+@media screen and (max-width: 640px)
+{
+
+.wrapper{
+height: 500px;
+width: 750px;
+}
+
+
+
+.cell{
+height: 500px;
+width: 750px;
+}
+  }
+
+#holder{
+height: 400px;
+width: 650px;
+}
+
+.digits{
+}
+.cntDigit{
+background-color:red;
+}
+
+}

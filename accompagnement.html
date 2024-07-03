@@ -1,0 +1,235 @@
+            <!DOCTYPE html>
+            <html lang="fr">
+              <head>
+                <title>WBAT Logiciel </title>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                  <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+                  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+                  <link href="style/style.css" rel="stylesheet">
+     
+                  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script type="text/javascript">
+            $(window).load(function(){
+     
+                var $window = $(window);
+                var $movingElement = $('#scroll-follower-container');
+                var $rigthCol = $('.col-right');
+     
+                var $leftCol = $('.col-left');
+                if ($rigthCol.length && $leftCol.length) {
+                    var onRight = $movingElement.parents('.col-right').length;
+                    var isRightSmaller = ($rigthCol.outerHeight() + $movingElement.height()) < $leftCol.outerHeight();
+     
+                    if (!onRight || isRightSmaller) {
+                        $movingElement.css('position','fixed');
+                    }
+                    else {
+                        $movingElement.css('position','static');
+                    }
+                }
+     
+                if( $movingElement.size() == 0 ) return;
+                var $footerElement = $('#footer');
+                var $previousElement = $movingElement.prev();
+     
+                $window.bind("scroll resize", function() {
+                    var elementHeight = $movingElement.height();
+                    if( $previousElement.size() > 0 ) var originalTop = $previousElement.position().top + $previousElement.outerHeight( true );
+                    else var originalTop = $movingElement.parent().position().top;
+                    var scrollTop = $window.scrollTop();
+                var scrollLeft = $movingElement.parent().position().left;
+                    var footerTop = $footerElement.position().top;
+                    var footerHeight = $footerElement.height() + 50;
+                    var footerShowing = footerHeight - $window.scrollBottom();
+                    if( scrollTop < originalTop ) $movingElement.css({ top: ( originalTop - scrollTop ) + "px", bottom: "auto", left: scrollLeft + "px" });
+                    else if ( ( scrollTop + elementHeight + 20 ) > footerTop ) $movingElement.css({ top: "auto", bottom: footerShowing + "px", left: scrollLeft + "px" });
+                    else $movingElement.css({ top: 0, bottom: "auto", left: scrollLeft + "px" });
+                }).scroll();
+            });
+                </script>   <!-- 
+            <script language=javascript>
+     
+            var redirectagent = navigator.userAgent.toLowerCase();
+            var redirect_devices = ['vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'blackberry', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'iphone', 'android', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+            for (var i in redirect_devices) {
+            if (redirectagent.indexOf(redirect_devices[i]) != -1) {
+            location.replace("http://m.wbat-software.com/mob.html");
+            }
+            }
+     
+            </script> -->
+     
+     
+     
+     
+              </head>
+          
+<body style="background-color: white;">
+    <div id="site" class="col-sm-12 container-fluid" style="background-color: #676B6A;">
+         <div >                
+          <div  >
+           <a href="recrutement.html">Recrutement</a>
+           </div>
+                 <div  id="partenariat">
+                  <a href="partenariat.html">Partenariat</a>
+
+                 </div>
+                    <div   id="headerContact">
+                     <a href="contact.html">Contact</a>
+
+                    </div>
+
+                        <div class="col-sm-1" id="reseauSoc" >
+                          <a href="https://www.facebook.com/WBAT-Logiciel-B%C3%A2timent-1369721673100487/" target="_blank"><img src="image/fb2.png" alt="facebook wbat Logiciel Batiment"></a>
+                             <a href="https://www.linkedin.com/in/wbat-france-464a8a13b/?trk=public-profile-join-page" target="_blank"><img src="image/lk1.png" alt"linkedin wbat Logiciel Batiment">  </a>
+
+                        </div>
+
+                            <div class="col-sm-1" style="margin-top: 5px;" >
+
+
+                            </div>
+
+               </div>               
+
+      </div>
+
+  
+
+              <div class="container-fluid col-sm-12">
+                 <div class="col-sm-4">
+
+                  
+      
+                        <img src="image/WBAT-LOGO-PP.png" height="70px;" width="200px;" alt="logo wbat Logiciel Batiment ">
+                  </div>    
+              <div class="col-sm-offset-7">
+
+    <nav class="navbar ">
+          <div class="container-fluid">
+           
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-align-justify btn-lg " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="color: black; float: right;">
+                  <span class="sr-only ">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+              </div>
+
+
+              <div class="collapse navbar-collapse col-sm-1"  id="bs-example-navbar-collapse-1">
+                <ul id="menu-demo2" class="nav navbar-nav">
+                                  
+                      <li style="margin-right: 5px;"><a href="apropos.html">L'entreprise</a>
+                              
+                            </li>
+                            <li style="margin-right: 5px;"><a href="logiciel.html">Logiciel</a>
+                        
+                            </li>
+                           <li style="margin-right: 5px;"><a href="demo.html">Demo</a>
+                              
+                            </li>
+                            <li style="margin-right: 5px;"><a href="formation_i.html">Formation</a>
+                        
+                            </li>
+                            <li style="margin-right: 5px;"><a href="accompagnement.html">Accompagnement</a>
+                              
+                            </li>
+                          
+
+
+                    </ul>
+                  
+              </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+  </div>
+     
+        
+                
+            </div>
+     
+     
+    <div  id="accompagnement" class="col-sm-12" style="text-align: center; margin-top: 50px;">
+      
+    <h1 style="color: #CB780C;">ACCOMPAGNEMENT</h1>
+    
+
+    <div class="col-sm-offset-2 col-sm-3">
+      <h3 style="font-weight: bold;"> Expertise personnalisée:</h3>
+<h3>Notre consultant spécialisé analysera votre organisation et vos besoins.</h3>
+    
+    </div>
+
+    <div class=" col-sm-3">
+      <h3 style="font-weight: bold;"> Proposition du projet</h3>
+<h3>Il vous proposera une solution adaptée.</h3>
+    
+    </div>
+    <div class=" col-sm-3">
+      <h3 style="font-weight: bold;"> Installation et formation</h3>
+<h3>Différents programmes sont disponibles.</h3>
+    
+    </div>
+
+      <div class="col-sm-3">
+      <h3 style="font-weight: bold;">Suivi et accompagnement</h3>
+<h3>Votre interlocuteur reste disponible et à votre écoute.</h3>
+    
+    </div>
+
+    <div class="col-sm-3">
+      <h3 style="font-weight: bold;"> Assistance</h3>
+<h3>Nos techniciens sont disponibles pour vous accompagner et vous apporter des réponses.</h3>
+    
+    </div>
+    
+</div><!-- accompagnement-->
+                 <div id="scroll-follower-container">
+     
+                   <a href="contact.html"><img src="image/casquetel.png" alt="contact wbat" height="60px" width="60px"></a>
+                 </div>
+     
+              </div>
+     
+     
+     
+              <div id="equipe"  > 
+                 
+     
+            <br><br>
+          <div id="footer" class="col-sm-12" style="margin-top:130px;">
+      <h1 >Agence WBAT</h1>
+      <div class="col-sm-6" style="margin-left:25%;">
+        <h3 style="color: #CB780C;font-weight: bold;">SIEGE SOCIAL</h3>
+        <h4>30 avenue de la liberté
+        83120 Sainte Maxime<br>
+        Tel :  04 94 95 71 36</h4>
+      </div>
+      
+              <div class="col-sm-2 col-sm-offset-8">
+              <h3><a href="contact.html">Contactez-nous</a></h3>
+            </div>
+     
+     
+                      <div   class="col-sm-12" style="text-align: center;">
+                            <h4><a href="mention.html">Copyright WBAT 2017© -  Mentions légales</a> </h4>
+                      </div>
+     
+              </div><!--equipe-->                  
+            </div>  
+            </div><!--container-->
+     
+     
+                <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+                  <script src="js/bootstrap.min.js"></script>
+     
+              </body>
+            </html> 

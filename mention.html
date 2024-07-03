@@ -1,0 +1,301 @@
+                <!DOCTYPE html>
+                <html lang="fr">
+                  <head>
+                    <title>WBAT Logiciel </title>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                      <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+                      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+                      <link href="style/style.css" rel="stylesheet">
+     
+                      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                $(window).load(function(){
+     
+                    var $window = $(window);
+                    var $movingElement = $('#scroll-follower-container');
+                    var $rigthCol = $('.col-right');
+     
+                    var $leftCol = $('.col-left');
+                    if ($rigthCol.length && $leftCol.length) {
+                        var onRight = $movingElement.parents('.col-right').length;
+                        var isRightSmaller = ($rigthCol.outerHeight() + $movingElement.height()) < $leftCol.outerHeight();
+     
+                        if (!onRight || isRightSmaller) {
+                            $movingElement.css('position','fixed');
+                        }
+                        else {
+                            $movingElement.css('position','static');
+                        }
+                    }
+     
+                    if( $movingElement.size() == 0 ) return;
+                    var $footerElement = $('#footer');
+                    var $previousElement = $movingElement.prev();
+     
+                    $window.bind("scroll resize", function() {
+                        var elementHeight = $movingElement.height();
+                        if( $previousElement.size() > 0 ) var originalTop = $previousElement.position().top + $previousElement.outerHeight( true );
+                        else var originalTop = $movingElement.parent().position().top;
+                        var scrollTop = $window.scrollTop();
+                    var scrollLeft = $movingElement.parent().position().left;
+                        var footerTop = $footerElement.position().top;
+                        var footerHeight = $footerElement.height() + 50;
+                        var footerShowing = footerHeight - $window.scrollBottom();
+                        if( scrollTop < originalTop ) $movingElement.css({ top: ( originalTop - scrollTop ) + "px", bottom: "auto", left: scrollLeft + "px" });
+                        else if ( ( scrollTop + elementHeight + 20 ) > footerTop ) $movingElement.css({ top: "auto", bottom: footerShowing + "px", left: scrollLeft + "px" });
+                        else $movingElement.css({ top: 0, bottom: "auto", left: scrollLeft + "px" });
+                    }).scroll();
+                });
+                    </script>   <!-- 
+                <script language=javascript>
+     
+                var redirectagent = navigator.userAgent.toLowerCase();
+                var redirect_devices = ['vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'blackberry', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'iphone', 'android', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+                for (var i in redirect_devices) {
+                if (redirectagent.indexOf(redirect_devices[i]) != -1) {
+                location.replace("http://m.wbat-software.com/mob.html");
+                }
+                }
+     
+                </script> -->
+     
+     
+     
+     
+                  </head>
+   
+<body style="background-color: white;">
+    <div id="site" class="col-sm-12 container-fluid" style="background-color: #676B6A;">
+         <div >                
+          <div  >
+           <a href="recrutement.html">Recrutement</a>
+           </div>
+                 <div  id="partenariat">
+                  <a href="partenariat.html">Partenariat</a>
+
+                 </div>
+                    <div   id="headerContact">
+                     <a href="contact.html">Contact</a>
+
+                    </div>
+
+                        <div class="col-sm-4" id="reseauSoc" >
+                          <a href="https://www.facebook.com/WBAT-Logiciel-B%C3%A2timent-1369721673100487/" target="_blank"><img src="image/fb2.png" alt="facebook wbat Logiciel Batiment"></a>
+                             <a href="https://www.linkedin.com/in/wbat-france-464a8a13b/?trk=public-profile-join-page" target="_blank"><img src="image/lk1.png" alt"linkedin wbat Logiciel Batiment">  </a>
+
+                        </div>
+
+                            <div class="col-sm-1" style="margin-top: 5px;" >
+
+
+                            </div>
+
+               </div>               
+
+      </div>
+
+  
+
+              <div class="container-fluid col-sm-12">
+                 <div class="col-sm-4">
+
+                  
+      
+                        <img src="image/WBAT-LOGO-PP.png" height="70px;" width="200px;" alt="logo wbat Logiciel Batiment ">
+                  </div>    
+              <div class="col-sm-offset-7">
+
+    <nav class="navbar ">
+          <div class="container-fluid">
+           
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-align-justify btn-lg " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="color: black; float: right;">
+                  <span class="sr-only ">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                
+              </div>
+
+
+              <div class="collapse navbar-collapse col-sm-1"  id="bs-example-navbar-collapse-1">
+                <ul id="menu-demo2" class="nav navbar-nav">
+                                  
+                      <li style="margin-right: 5px;"><a href="apropos.html">L'entreprise</a>
+                              
+                            </li>
+                            <li style="margin-right: 5px;"><a href="logiciel.html">Logiciel</a>
+                        
+                            </li>
+                           <li style="margin-right: 5px;"><a href="demo.html">Demo</a>
+                              
+                            </li>
+                            <li style="margin-right: 5px;"><a href="formation_i.html">Formation</a>
+                        
+                            </li>
+                            <li style="margin-right: 5px;"><a href="accompagnement.html">Accompagnement</a>
+                              
+                            </li>
+                          
+
+
+                    </ul>
+                  
+              </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+  </div>
+     
+     
+                <div class="container-fluid col-sm-12" id="equipe">
+                  <div id="client" class="col-sm-4 col-sm-offset-10">
+                                           <a href="espace_client.html">
+                                              <style type="text/css">
+     
+                    #client{background-color: transparent; background-image: url(image/client.png);background-repeat: no-repeat;display: block;height: 88px; width: 150px}
+                    #client:hover{background-image: url(image/clienthover.png); display: block;}
+     
+                                                </style>
+                                                <h3 style="color: white;">.</h3></a>
+     
+                    </div>
+                    <div id="assistance" class="col-sm-4 ">
+     
+                                                 <style type="text/css">
+     
+                       #assistance{background-color: transparent; background-image: url(image/assistance1.png);background-repeat: no-repeat;display: block;height: 88px; width: 150px}
+                      #assistance:hover{background-image: url(image/assistancehover.png); display: block;}
+                                              </style>
+                     <a href="mailto:sav@wbat.fr,contact@wbat.fr,manon.leroy@wbat.fr"> 
+                     <h3 style="color: white;">.</h3></a>
+                  </div>
+                </div>
+     
+       		
+
+<h1 style="text-align: center;color: #CB780C;">MENTIONS LEGALES</h1>
+
+<h2>Mentions légales</h2>
+<h3 style="color: black;">Conformément à la loi de l'article 6 III-1 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, cette page reprend les mentions légales et conditions générales d'utilisation du site.</h3><br>
+<h3 style="color: black;font-weight: bold;">Editeur du site :</h3><br>
+<h3 style="color: black;">Le présent site est la propriété de WBAT : <br>
+- SAS au capital de 15 000€<br>
+- Immatriculée au registre du commerce et des sociétés<br>
+- Siège social : 30 avenue de la liberté 83120 Sainte Maxime<br>
+- TVA intracommunautaire : en cours<br>
+- Email : contact@wbat.fr<br>
+- Téléphone : 04.98.12.46.39<br>
+- Déclaration d'activité enregistrée sous le numéro : 93830529983 du prefet de la région PACA<br>
+<h3 style="color: black;font-weight: bold;">- Directeur de la publication :<br></h3> <h3  style="color: black;">Groupe SATNAD</h3><br>
+<h3 style="color: black;font-weight: bold;">Hébergeur :</h3><br>
+<h3  style="color: black;">Boomer<br>
+Centro de Escritórios do Fórum da Maia,<br>
+Rua Barão de S. Januário 29, 4470-473 Maia<br>
+Tel :+351 220 106 984<br>
+</h3>
+
+<h1 style="text-align: center;">DONNEES PERSONNELLES</h1>
+<h3 style="color: black;">Les données personnelles des internautes collectées par le biais du site Internet www.wbat.fr sont collectées et traitées dans le respect des dispositions de la loi n° 78-17 du 6 janvier 1978, dite Loi Informatique et Libertés.<br>
+
+Le responsable du traitement est l'éditeur du site tel qu'identifié ci-dessus.<br>
+
+Les données personnelles collectées sur www.wbat.fr sont exclusivement destinées à l'éditeur du site. Aucune donnée personnelle n'est cédée ou communiquée à un tiers.<br>
+
+Ces données ont pour finalité le traitement des messages passés par l'internaute sur le site www.wbat.fr. Les données collectées pourront être utilisées pour adresser à l'internaute des offres promotionnelles et newsletters du site et de ses partenaires, ce dès lors que l'internaute a fait part de son accord.<br>
+
+Conformément à la loi précitée, l'internaute dispose d'un droit d'accès, de rectification, de suppressions des données personnelles le concernant. Pour exercer ce droit, l'internaute peut adresse sa demande :<br>
+
+    Par courriel à contact@wbat.fr<br>
+    Ou par courrier à : WBAT - 30 avenue de la liberté 83120 Sainte Maxime<br>
+
+L'internaute dispose également d'un droit d'opposition à la collecte de ses données. L'internaute est toutefois informé que les données communiquées par le biais des formulaires présents sur le site www.wbat.fr et identifiées comme obligatoires sont nécessaires à WBAT pour le traitement et la réponse aux messages reçus. Le traitement des messages ne pourra en conséquence être effectué si ces données ne sont pas renseignées par l'internaute</h3>
+
+<h1 style="text-align: center;">UTILISATION DES COOKIES</h1>
+<h3 style="color: black;">Le site Internet wbat.fr utilise des cookies pour :<br>
+
+    Réaliser des statistiques de visite avec les informations de mesure d’audience fournies par le service « Google Analytics ». Les cookies utilisés dans le cadre de ce service permettent d’analyser le comportement des internautes de façon globale et anonyme : les pages les plus consultées, date et heure des consultations…<br>
+
+    Optimiser l’utilisation du site. Ils permettent au système du site de se souvenir de l’appareil de l’internaute. Les cookies utilisés par le site wbat.fr ne contiennent pas de données à caractère personnel, seulement des informations relatives à la navigation : résolution d’affichage, système d’exploitation, navigateur… permettant d’adapter la présentation de notre site selon les terminaux utilisés.
+</h3>
+
+<h1 style="text-align: center;">GESTION DES COOKIES</h1>
+<h3 style="color: black;">Pour la gestion des cookies et de vos choix, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d'aide de votre navigateur, qui vous permettra de savoir de quelle manière modifier vos souhaits en matière de cookies.<br>
+
+    Pour Internet Explorer™<br>
+    Pour Safari™<br>
+    Pour Chrome™<br>
+    Pour Firefox™<br>
+    Pour Opera™<br>
+</h3>
+
+<h1 style="text-align: center;">PROPRIETE INTELECTUELLE</h1>
+<H3 style="color: black;">Le site internet exploité à l'adresse www.wbat.fr est la propriété de la société WBAT.
+
+Ce site est en outre une œuvre protégée par le droit de la propriété intellectuelle. Il comporte des textes, images, photographies, illustrations, logos, eux-mêmes protégés par des droits de propriétés industrielle et intellectuelle.<br>
+
+L'usage par l'internaute du site www.wbat.fr est strictement réservé à un usage privé - le droit d'utilisation par l'internaute étant limité à la consultation des informations figurant sur le site.<br>
+
+Toute utilisation, reproduction, téléchargement total ou partiel du site www.wbat.fr, ou de l'un de ses éléments textes, images, photographies illustrations, logos sans l'accord de son propriétaire ou du titulaire des droits est en conséquence interdite, à l'exception de la copie privée réalisée à des fins personnelles et non commerciales.<br>
+
+Toute infraction au présent article est susceptible d'être pénalement et civilement sanctionnée, notamment au titre de la contrefaçon et entraînera le cas échéant le versement de dommages et intérêts.<br>
+Mentions légales de l'entreprise WBAT<br>
+Présentation des mentions légales Aquitaine Informatique et conditions générales d'utilisation du site WBAT </H3>
+
+<h1 style="text-align: center;">LES COOKIES EMIS SUR NOTRE SITE PAR DES TIERS</h1>
+<h3 style="color: black;">L'émission et l'utilisation de cookies par des tiers, sont soumises aux politiques de protection de la vie privée de ces tiers. Nous vous informons de l'objet des cookies dont nous avons connaissance et des moyens dont vous disposez pour effectuer des choix à l'égard de ces cookies.<br>
+
+Nous sommes susceptibles d'inclure sur notre site/application, des applications informatiques émanant de tiers, qui vous permettent de partager des contenus de notre site avec d'autres personnes ou de faire connaître à ces autres personnes votre consultation ou votre opinion concernant un contenu de notre site/application. Tel est notamment le cas des boutons "Partager" issus des réseaux sociaux tels que LinkedIn, Twitter, YouTube, Google+, Viadeo, etc.<br>
+
+Le réseau social fournissant un tel bouton applicatif est susceptible de vous identifier grâce à ce bouton, même si vous n'avez pas utilisé ce bouton lors de votre consultation de notre site/application. En effet, ce type de bouton applicatif peut permettre au réseau social concerné de suivre votre navigation sur notre site, du seul fait que votre compte au réseau social concerné était activé sur votre terminal (session ouverte) durant votre navigation sur notre site.<br>
+
+Nous n'avons aucun contrôle sur le processus employé par les réseaux sociaux pour collecter des informations relatives à votre navigation sur notre site et associées aux données personnelles dont ils disposent. Nous vous invitons à consulter les politiques de protection de la vie privée de ces réseaux sociaux afin de prendre connaissance des finalités d'utilisation, notamment publicitaires, des informations de navigation qu'ils peuvent recueillir grâce à ces boutons applicatifs. Ces politiques de protection doivent notamment vous permettre d'exercer vos choix auprès de ces réseaux sociaux, notamment en paramétrant vos comptes d'utilisation de chacun de ces réseaux.</h3>
+
+
+     
+                     <div id="scroll-follower-container">
+     
+                       <a href="contact.html"><img src="image/casquetel.png" alt="contact wbat" height="60px" width="60px"></a>
+                     </div>
+     
+                  </div>
+     
+     
+     
+                  <div id="equipe"  >  
+                 
+     
+                <br><br>
+              <div id="footer" class="col-sm-12" style="height="100px;">
+      <h1 >Agence WBAT</h1>
+      <div class="col-sm-6" style="margin-left:25%;">
+        <h3 style="color: #CB780C;font-weight: bold;">SIEGE SOCIAL</h3>
+        <h4>30 avenue de la liberté
+        83120 Sainte Maxime<br>
+        Tel :  04 94 95 71 36</h4>
+      </div>
+      
+              <div class="col-sm-2 col-sm-offset-8">
+              <h3><a href="contact.html">Contactez-nous</a></h3>
+            </div>
+     
+     
+                          <div   class="col-sm-12" style="text-align: center;">
+                                <h4><a href="mention.html">Copyright WBAT 2017© -  Mentions légales</a> </h4>
+                          </div>
+     
+                  </div><!--equipe-->                  
+                </div>  
+                </div><!--container-->
+     
+     
+                    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+                      <script src="js/bootstrap.min.js"></script>
+     
+                  </body>
+                </html> 
